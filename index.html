@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #800000;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+        }
+        .projects, .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            width: calc(33% - 2rem);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            background-color: #ffe6e6;
+            border-color: #800000;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #800000;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>A glimpse into my journey and work</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#links">Important Links</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm currently a sophomore at the University of Maryland ('27), double majoring in Computer Science and Electrical Engineering with a minor in Economics. As a Junior Product Owner at Payabli, I help define product requirements, enhance UI features, evaluate financial institution RFPs, and streamline processes through a ticket prioritization framework. I am passionate about leveraging technology to solve real-world challenges and advancing my knowledge in software development, research, and product management.</p>
+        <div>
+            <img src="your-image1.jpg" alt="About Me Image 1" style="width: 200px; border-radius: 10px;">
+            <img src="your-image2.jpg" alt="About Me Image 2" style="width: 200px; border-radius: 10px;">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Stock Price Predictor</h3>
+                <p>Developed an RNN-based model to predict stock prices using historical data, and analyzed economic indicators like CPI and GDP for improved accuracy.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Pomodoro Productivity Extension</h3>
+                <p>Designed a Chrome extension implementing the Pomodoro technique to enhance time management, featuring customizable schedules and task tracking.</p>
+                <a href="https://github.com/abharga4/Pomodoro-Productivity">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Universal Form Autofiller</h3>
+                <p>Created a tool to automate form-filling processes, significantly improving productivity and reducing manual errors for repetitive tasks.</p>
+                <a href="https://github.com/abharga4/Universal-Form-Autofiller">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Paperfluidic E. coli Detector</h3>
+                <p>Worked on a research project to create a cost-effective, portable device for detecting E. coli in wastewater, with applications in environmental monitoring and public health.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences">
+        <h2>Experiences</h2>
+        <div>
+            <h3>Junior Product Owner - Payabli</h3>
+            <p>Defined product requirements, enhanced UI features, and streamlined processes through a ticket prioritization framework. Evaluated financial institution RFPs to guide development strategy.</p>
+        </div>
+        <div>
+            <h3>Assistant VP of Finance - Debate Club</h3>
+            <p>Organized budgets, coordinated fundraising initiatives, and maintained accurate financial records. Collaborated with the VP of Finance to set budgets and ensure fiscal accountability.</p>
+        </div>
+    </section>
+
+    <section id="links">
+        <h2>Important Links</h2>
+        <div class="links">
+            <a href="https://github.com/abharga4" class="card">GitHub</a>
+            <a href="https://www.linkedin.com/in/aayush-bhargava2027" class="card">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aayush Bhargava. All rights reserved.</p>
+    </footer>
+</body>
+</html>
