@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+            background-color: #E9E8D4;
             color: #333;
         }
         header {
-            background-color: #800000;
-            color: white;
+            background-color: #77815C;
+            color: #FAF7F0;
             padding: 1.5rem 2rem;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #556B2F;
             padding: 0.8rem;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
         nav a {
-            color: white;
+            color: #FAF7F0;
             text-decoration: none;
             margin: 0 1.5rem;
             font-weight: bold;
@@ -41,10 +41,20 @@
         section {
             padding: 3rem 2rem;
         }
+        .group {
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        .group-item {
+            margin-bottom: 2rem;
+            background: #FAF7F0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
         .timeline {
             position: relative;
             margin: 2rem auto;
-            padding: 0;
             max-width: 900px;
         }
         .timeline::before {
@@ -54,14 +64,14 @@
             bottom: 0;
             left: 50%;
             width: 6px;
-            background: #ddd;
+            background: #77815C;
             transform: translateX(-50%);
         }
         .timeline-event {
             position: relative;
             margin: 2rem 0;
             padding: 1.5rem;
-            background: white;
+            background: #FAF7F0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 45%;
@@ -81,10 +91,10 @@
             left: -12px;
             width: 24px;
             height: 24px;
-            background: #800000;
+            background: #77815C;
             border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 0 0 2px #ddd;
+            border: 4px solid #FAF7F0;
+            box-shadow: 0 0 0 2px #E9E8D4;
         }
         .timeline-event:nth-child(even)::before {
             left: auto;
@@ -93,8 +103,8 @@
         footer {
             text-align: center;
             padding: 2rem;
-            background-color: #800000;
-            color: white;
+            background-color: #556B2F;
+            color: #FAF7F0;
             margin-top: 3rem;
         }
         #links {
@@ -104,7 +114,7 @@
         #links a {
             display: inline-block;
             margin: 0 1.5rem;
-            color: #800000;
+            color: #556B2F;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2rem;
@@ -135,20 +145,20 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="timeline">
-            <div class="timeline-event">
+        <div class="group">
+            <div class="group-item">
                 <h3>Stock Price Predictor</h3>
                 <p>Developed an RNN-based model to predict stock prices using historical data, and analyzed economic indicators like CPI and GDP for improved accuracy.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Pomodoro Productivity Extension</h3>
                 <p>Designed a Chrome extension implementing the Pomodoro technique to enhance time management, featuring customizable schedules and task tracking.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Universal Form Autofiller</h3>
                 <p>Created a tool to automate form-filling processes, significantly improving productivity and reducing manual errors for repetitive tasks.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Paperfluidic E. coli Detector</h3>
                 <p>Worked on a research project to create a cost-effective, portable device for detecting E. coli in wastewater, with applications in environmental monitoring and public health.</p>
             </div>
@@ -179,16 +189,16 @@
 
     <section id="volunteer">
         <h2>Volunteer Work</h2>
-        <div class="timeline">
-            <div class="timeline-event">
+        <div class="group">
+            <div class="group-item">
                 <h3>Vice President - Silver Linings Club</h3>
                 <p>Volunteered at Multiple Sclerosis Society events, organized cleanups at local parks, and supported charitable fundraising for organizations like the Juvenile Diabetes Research Fund and Feeding Westchester.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Physics and Mathematics Tutor</h3>
                 <p>Tutored classmates in Pre-Calculus and AP Physics, conducting 1-hour lessons three times per week to work on problem sets and explain concepts at a deeper level.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>President - Amnesty International USA</h3>
                 <p>Led events to educate on human rights violations worldwide. Organized initiatives like the Write for Rights Campaign and Harmonies for Humanities to gather support for petitions and raise awareness.</p>
             </div>
