@@ -57,58 +57,6 @@
             padding: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .group-item h3 {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        .timeline {
-            position: relative;
-            margin: 2rem auto;
-            max-width: 900px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 6px;
-            background: #77815C;
-            transform: translateX(-50%);
-        }
-        .timeline-event {
-            position: relative;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #FAF7F0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 45%;
-        }
-        .timeline-event:nth-child(even) {
-            float: right;
-            clear: right;
-        }
-        .timeline-event:nth-child(odd) {
-            float: left;
-            clear: left;
-        }
-        .timeline-event::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: -12px;
-            width: 24px;
-            height: 24px;
-            background: #77815C;
-            border-radius: 50%;
-            border: 4px solid #FAF7F0;
-            box-shadow: 0 0 0 2px #E9E8D4;
-        }
-        .timeline-event:nth-child(even)::before {
-            left: auto;
-            right: -12px;
-        }
         footer {
             text-align: center;
             padding: 2rem;
@@ -158,20 +106,20 @@
 
     <section id="experiences">
         <h2>Experiences</h2>
-        <div class="timeline">
-            <div class="timeline-event">
+        <div class="group">
+            <div class="group-item">
                 <h3>Junior Product Owner - Payabli</h3>
                 <p>Since joining Payabli as a Junior Product Owner, I’ve been responsible for developing product requirements, enhancing UI designs, and testing new features to support the integration of streamlined payment solutions. My role includes evaluating Requests for Proposals (RFPs) from major financial institutions such as Chesapeake, Column Bank, and Synovus, ensuring alignment with our product strategy and client needs. Additionally, I implemented a ticket prioritization framework to optimize workflow and improve request processing efficiency.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Assistant VP of Finance - Maryland Parliamentary Debate Society</h3>
                 <p>Managed budgeting, fundraising, and reimbursements while ensuring accurate financial records. Oversaw receipt collection during tournaments and collaborated with the VP of Finance to set budgets with the SORC office. Additionally, I introduced new processes to ensure that financial transparency remains a priority, while keeping team morale high.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Project Intern - RWE</h3>
                 <p>Spearheaded the development of a model to predict and optimize the output of solar farms. Utilized tools like Anaconda, Jupyter Notebooks, and Excel with real-time data. Learned about large-scale solar field operations and developed practical Python programming skills.</p>
             </div>
-            <div class="timeline-event">
+            <div class="group-item">
                 <h3>Student Researcher - Purdue University</h3>
                 <p>Researched and wrote a paper on hybrid neural networks for detecting fake news articles, earning 12 dual-enrollment college credits. Completed certifications in Text-Based Python, Natural Language Processing, and AI.</p>
             </div>
