@@ -46,16 +46,56 @@
             font-size: 2rem;
             margin-bottom: 2rem;
         }
-        .group {
-            margin: 2rem auto;
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
             max-width: 900px;
+            margin: 2rem auto;
         }
-        .group-item {
-            margin-bottom: 2rem;
-            background: #FAF7F0;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #556B2F;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .timeline-item.left {
+            text-align: right;
+            padding-right: 2rem;
+        }
+        .timeline-item.right {
+            text-align: left;
+            padding-left: 2rem;
+        }
+        .timeline-item h3 {
+            font-size: 1.2rem;
+            margin: 0 0 0.5rem;
+        }
+        .timeline-item p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #556B2F;
+            border-radius: 50%;
+            top: 10px;
+            left: calc(50% - 5px);
+            transform: translateX(-50%);
         }
         footer {
             text-align: center;
@@ -87,7 +127,7 @@
 </head>
 <body>
     <header>
-        <h1>Personal Portfolio</h1>
+        <h1>Welcome to My Portfolio</h1>
         <p>A glimpse into my journey and work</p>
     </header>
 
@@ -106,22 +146,22 @@
 
     <section id="experiences">
         <h2>Experiences</h2>
-        <div class="group">
-            <div class="group-item">
-                <h3>Junior Product Owner - Payabli | July 2024 - Present</h3>
-                <p>Since joining Payabli as a Junior Product Owner, I’ve been responsible for developing product requirements, enhancing UI designs, and testing new features to support the integration of streamlined payment solutions. My role includes evaluating Requests for Proposals (RFPs) from major financial institutions such as Chesapeake, Column Bank, and Synovus, ensuring alignment with our product strategy and client needs. Additionally, I implemented a ticket prioritization framework to optimize workflow and improve request processing efficiency.</p>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <h3>Student Researcher - Purdue University (2021)</h3>
+                <p>Researched and wrote a paper on hybrid neural networks for detecting fake news articles, earning 12 dual-enrollment college credits. Completed certifications in Text-Based Python, Natural Language Processing, and AI.</p>
             </div>
-            <div class="group-item">
-                <h3>VP of Finance - Maryland Parliamentary Debate Society | December 2024 - Present</h3>
-                <p>Managed budgeting, fundraising, and reimbursements while ensuring accurate financial records. Oversaw receipt collection during tournaments and collaborated with the VP of Finance to set budgets with the SORC office. Additionally, I introduced new processes to ensure that financial transparency remains a priority, while keeping team morale high.</p>
-            </div>
-            <div class="group-item">
-                <h3>Project Intern - RWE | May 2023 - August 2023 </h3>
+            <div class="timeline-item right">
+                <h3>Project Intern - RWE (2022)</h3>
                 <p>Spearheaded the development of a model to predict and optimize the output of solar farms. Utilized tools like Anaconda, Jupyter Notebooks, and Excel with real-time data. Learned about large-scale solar field operations and developed practical Python programming skills.</p>
             </div>
-            <div class="group-item">
-                <h3>Student Researcher - Purdue University | January 2020 - May 2023</h3>
-                <p>Researched and wrote a paper on hybrid neural networks for detecting fake news articles, earning 12 dual-enrollment college credits. Completed certifications in Text-Based Python, Natural Language Processing, and AI.</p>
+            <div class="timeline-item left">
+                <h3>Assistant VP of Finance - Maryland Parliamentary Debate Society (2023)</h3>
+                <p>Managed budgeting, fundraising, and reimbursements while ensuring accurate financial records. Oversaw receipt collection during tournaments and collaborated with the VP of Finance to set budgets with the SORC office. Additionally, I introduced new processes to ensure that financial transparency remains a priority, while keeping team morale high.</p>
+            </div>
+            <div class="timeline-item right">
+                <h3>Junior Product Owner - Payabli (2024)</h3>
+                <p>Since joining Payabli as a Junior Product Owner, I’ve been responsible for developing product requirements, enhancing UI designs, and testing new features to support the integration of streamlined payment solutions. My role includes evaluating Requests for Proposals (RFPs) from major financial institutions such as Chesapeake, Column Bank, and Synovus, ensuring alignment with our product strategy and client needs. Additionally, I implemented a ticket prioritization framework to optimize workflow and improve request processing efficiency.</p>
             </div>
         </div>
     </section>
@@ -142,7 +182,7 @@
                 <p>Created a tool to automate form-filling processes, significantly improving productivity and reducing manual errors for repetitive tasks.</p>
             </div>
             <div class="group-item">
-                <h3>Paperfluidic E. Coli Detector</h3>
+                <h3>Paperfluidic E. coli Detector</h3>
                 <p>Worked on a research project to create a cost-effective, portable device for detecting E. coli in wastewater, with applications in environmental monitoring and public health.</p>
             </div>
         </div>
