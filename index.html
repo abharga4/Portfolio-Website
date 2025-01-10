@@ -97,6 +97,30 @@
             left: calc(50% - 5px);
             transform: translateX(-50%);
         }
+        .group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .group-item {
+            background-color: #FFA500;
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .group-item:nth-child(2) {
+            background-color: #FF6347;
+        }
+        .group-item:nth-child(3) {
+            background-color: #4682B4;
+        }
+        .group-item:nth-child(4) {
+            background-color: #32CD32;
+        }
         footer {
             text-align: center;
             padding: 2rem;
